@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from "react-router";
+import { Link, Route, Routes, useParams } from "react-router";
 import { styled } from "styled-components";
 
 import Header from "./Components/Header";
@@ -11,6 +11,7 @@ import Experience from "./Components/Compartments/Experience";
 import Extracurricular from "./Components/Compartments/Extracurricular";
 import Certification from "./Components/Compartments/Certification";
 import Project from "./Components/Compartments/Project";
+import { useEffect } from "react";
 
 const PageWrapper = styled.div`
     margin: auto;

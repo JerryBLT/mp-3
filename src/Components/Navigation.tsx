@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router";
+import { Link } from "react-router";
 import { styled } from "styled-components"
 const Nav = styled.nav`
     width: 30%;
@@ -61,35 +61,35 @@ const StyledLink = styled(Link)`
 
 export default function Navigation() {
     
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const NavigationHandle = (root: string) => {
-        const title = root === "/" ? "Home" : root;
-        document.title =  title + " | Resume";
-        navigate(root);
-    };
+    // const NavigationHandle = (root: string) => {
+    //     const title = root === "/" ? "Home" : root;
+    //     document.title =  title + " | Resume";
+    //     navigate(root);
+    // };
 
 
     return(
         <Nav>
             <NavList>
                 <NavItem>
-                <StyledLink to={`/`} onClick={() => NavigationHandle("/")}>Home</StyledLink>
+                <StyledLink to={`/`} >Home</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={`/education`} onClick={() => NavigationHandle("Education")}>Education</StyledLink>
+                    <StyledLink to={`/education`} >Education</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={`/experience`} onClick={() => NavigationHandle("Experience")}>Experience</StyledLink>
+                    <StyledLink to={`/experience`}>Experience</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={`/extracurricular`} onClick={() => NavigationHandle("Extracurricular")}>Extracurricular</StyledLink>
+                    <StyledLink to={`/extracurricular`}>Extracurricular</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={`/certification`} onClick={() => NavigationHandle("Certification")}>Certification</StyledLink>
+                    <StyledLink to={`/certification`}>Certification</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={`/project`} onClick={() => NavigationHandle("Project")}>Project</StyledLink>
+                    <StyledLink to={`/project`}>Project</StyledLink>
                 </NavItem>
             </NavList>
         </Nav>
