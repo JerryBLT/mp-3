@@ -59,7 +59,7 @@ export default function Root(){
                     </Routes>
                 </Container>
                 <FooterWrapper>
-                    <p>All rights reserved by Jerry Teixeira: <Link to={""}>Credits</Link> &#169;</p>
+                    <p>All rights reserved by Jerry Teixeira: <Link to={''}>Credits</Link> &#169;</p>
                 </FooterWrapper>
         </PageWrapper>
     );
