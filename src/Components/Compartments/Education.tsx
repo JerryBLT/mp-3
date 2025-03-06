@@ -27,6 +27,9 @@ const SectionTitle = styled.h4`
   font-size: calc(2px + 2vw);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   margin-bottom: 10px;
+  @media screen and (max-width: 750px){
+    font-size: calc(2.5px + 3vw);
+  }
 `;
 
 const Paragraph = styled.p`
@@ -34,6 +37,9 @@ const Paragraph = styled.p`
   font-size: calc(1.5px + 2vw);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   margin-bottom: 20px;
+  @media screen and (max-width: 750px){
+    font-size: calc(2.5px + 2.5vw);
+  }
 `;
 
 const Strong = styled.strong`
@@ -62,6 +68,9 @@ const CourseItem = styled.li`
   &:hover {
     transform: translate(1px, 1px);
     box-shadow: 1px 2px 4px black;
+  }
+  @media screen and (max-width: 750px){
+    font-size: calc(2px + 2vw);
   }
 `;
 

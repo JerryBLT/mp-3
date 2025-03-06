@@ -45,7 +45,7 @@ const Image = styled.div`
   margin-bottom: 20px;
 
   img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
   }
 `;
@@ -55,7 +55,7 @@ export default function Index() {
     <HomeWrapper>
       <Title>Home</Title>
       <Image>
-        <img src="/src/jerry.jpg" alt="Jerry profile picture" />
+        <img src="/jerry.jpg" alt="Jerry profile picture" />
       </Image>
       <Paragraph>
         My name is Jerry Teixeira, and I am a junior at <Strong>Boston University</Strong> majoring in Computer Science and Biology. 

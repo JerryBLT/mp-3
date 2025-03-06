@@ -27,30 +27,43 @@ const CompanyName = styled.h4`
   font-size: calc(2px + 2vw);
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
   margin-bottom: 10px;
+  @media screen and (max-width: 750px){
+    font-size: calc(2.5px + 3vw);
+  }
 `;
 
 const JobTitle = styled.h5`
-    color: rgb(204, 0, 0);
-    margin: 0 1vw;
-    font-size: calc(1.5px + 1.5vw);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    margin-bottom: 10px;
+  color: rgb(204, 0, 0);
+  margin: 0 1vw;
+  font-size: calc(1.5px + 1.5vw);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  margin-bottom: 10px;
+  @media screen and (max-width: 750px){
+    font-size: calc(2.5px + 2.5vw);
+  }
 `;
 
 const DateRange = styled.p`
-    color: #878484;
-    margin: 0 1vw;
-    font-size: calc(1px + 1.5vw);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    margin-bottom: 20px;
+  color: #878484;
+  margin: 0 1vw;
+  font-size: calc(1px + 1.5vw);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  margin-bottom: 20px;
+  @media screen and (max-width: 750px){
+    font-size: calc(1.5px + 2vw);
+  }
 `;
 
 const Description = styled.p`
-    color: black;
-    margin: 0 1vw;
-    font-size: calc(1.5px + 2vw);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    margin-bottom: 20px;
+  color: black;
+  margin: 0 1vw;
+  font-size: calc(1.5px + 2vw);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  margin-bottom: 20px;
+  @media screen and (max-width: 750px){
+    font-size: calc(2.5px + 2.5vw);
+  }
+
 `;
 
 export default function Experience() {
