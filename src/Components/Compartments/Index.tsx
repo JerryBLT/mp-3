@@ -29,6 +29,7 @@ const Paragraph = styled.p`
   @media screen and (max-width: 750px){
     font-size: calc(2.5px + 2.5vw);
   }
+  margin-bottom: 5px;
 `;
 
 const Strong = styled.strong`
@@ -41,6 +42,7 @@ const Underline = styled.u`
 `;
 
 const Image = styled.div`
+  margin: 5px;
   text-align: center;
   margin-bottom: 20px;
 

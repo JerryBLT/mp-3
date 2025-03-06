@@ -74,22 +74,22 @@ export default function Navigation() {
         <Nav>
             <NavList>
                 <NavItem>
-                <StyledLink to={"/"} onClick={() => NavigationHandle("/")}>Home</StyledLink>
+                <StyledLink to={`/`} onClick={() => NavigationHandle("/")}>Home</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={"/education"} onClick={() => NavigationHandle("Education")}>Education</StyledLink>
+                    <StyledLink to={`/education`} onClick={() => NavigationHandle("Education")}>Education</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={"/experience"} onClick={() => NavigationHandle("Experience")}>Experience</StyledLink>
+                    <StyledLink to={`/experience`} onClick={() => NavigationHandle("Experience")}>Experience</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={"/extracurricular"} onClick={() => NavigationHandle("Extracurricular")}>Extracurricular</StyledLink>
+                    <StyledLink to={`/extracurricular`} onClick={() => NavigationHandle("Extracurricular")}>Extracurricular</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={"/certification"} onClick={() => NavigationHandle("Certification")}>Certification</StyledLink>
+                    <StyledLink to={`/certification`} onClick={() => NavigationHandle("Certification")}>Certification</StyledLink>
                 </NavItem>
                 <NavItem>
-                    <StyledLink to={"/project"} onClick={() => NavigationHandle("Project")}>Project</StyledLink>
+                    <StyledLink to={`/project`} onClick={() => NavigationHandle("Project")}>Project</StyledLink>
                 </NavItem>
             </NavList>
         </Nav>

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Link, Route, Routes } from "react-router";
 import { styled } from "styled-components";
 
 import Header from "./Components/Header";
@@ -49,16 +49,16 @@ export default function Root(){
                 <Container>
                     <Navigation/>
                     <Routes>
-                        <Route path={"/*"} element={<Index/>} />
-                        <Route path={"/education"} element={<Education/>} />
-                        <Route path={"/experience"} element={<Experience/>} />
-                        <Route path={"/extracurricular"} element={<Extracurricular/>} />
-                        <Route path={"/certification"} element={<Certification/>} />
-                        <Route path={"/project"} element={<Project/>} />
+                        <Route path={`/`} element={<Index/>} />
+                        <Route path={`/education`} element={<Education/>} />
+                        <Route path={`/experience`} element={<Experience/>} />
+                        <Route path={`/extracurricular`} element={<Extracurricular/>} />
+                        <Route path={`/certification`} element={<Certification/>} />
+                        <Route path={`/project`} element={<Project/>} />
                     </Routes>
                 </Container>
                 <FooterWrapper>
-                    <p>All rights reserved by Jerry Teixeira: <a href="">Credits</a> &#169;</p>
+                    <p>All rights reserved by Jerry Teixeira: <Link to={""}>Credits</Link> &#169;</p>
                 </FooterWrapper>
         </PageWrapper>
     );
