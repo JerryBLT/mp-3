@@ -130,26 +130,26 @@ export default function Calculator(){
 
     return(
         <CalculatorWrapper>
-                <Input
-                    placeholder="First Number"
-                    value={firstNumber}
-                    onChange={(e) => setFirstNumber(e.target.value)}
-                    />
-                <Input
-                    placeholder="Second Number"
-                    value={secondNumber}
-                    onChange={(e) => setSecondNumber(e.target.value)}
+            <Input
+                placeholder="First Number"
+                value={firstNumber}
+                onChange={(e) => setFirstNumber(e.target.value)}
                 />
-                <ButtonContainer>
-                    <Button onClick={() => Addition()}>+</Button>
-                    <Button onClick={() => Subtraction()}>-</Button>
-                    <Button onClick={() => Multiplication()}>*</Button>
-                    <Button onClick={() => Division()}>/</Button>
-                    <Button onClick={() => Product()}>**</Button>
-                    <Button onClick={clearCalc}>Clear</Button>
-                </ButtonContainer>
-                <Result $number={result}> {result} </Result>
-                </CalculatorWrapper>
+            <Input
+                placeholder="Second Number"
+                value={secondNumber}
+                onChange={(e) => setSecondNumber(e.target.value)}
+            />
+            <ButtonContainer>
+                <Button onClick={() => Addition()}>+</Button>
+                <Button onClick={() => Subtraction()}>-</Button>
+                <Button onClick={() => Multiplication()}>*</Button>
+                <Button onClick={() => Division()}>/</Button>
+                <Button onClick={() => Product()}>**</Button>
+                <Button onClick={clearCalc}>Clear</Button>
+            </ButtonContainer>
+            <Result $number={result}> {result} </Result>
+        </CalculatorWrapper>
     );
     
 }
