@@ -57,9 +57,9 @@ const NavItem = styled.li`
 
 const StyledLink = styled(Link)`
   display: inline-block;
-  padding: 10px 15px;
+  padding: 10px;
   text-decoration: none;
-  font-weight: 600;
+  font-size: calc(2px + 2vw);
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: black;
   background-color: white;
@@ -72,7 +72,7 @@ const StyledLink = styled(Link)`
   }
 
   @media screen and (max-width: 750px) {
-    font-size: calc(2px + 2vw);
+    font-size: calc(2px + 2.5vw);
   }
 `;
 

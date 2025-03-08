@@ -37,10 +37,10 @@ const FooterWrapper = styled.footer`
     color: #C4A484;
     padding: 1vh 1vw;
     text-align: center;
+`;
 
-    a {
-        color: #C4A484;
-    }
+const FooterLink = styled(Link)`
+    color: #C4A484;
 `;
 
 export default function Root(){
@@ -70,7 +70,7 @@ export default function Root(){
                     </Routes>
                 </Container>
                 <FooterWrapper>
-                    <p>All rights reserved by Jerry Teixeira: <Link to={'/'}>Credits</Link> &#169;</p>
+                    <p>All rights reserved by Jerry Teixeira: <FooterLink to={'/'}>Credits</FooterLink> &#169;</p>
                 </FooterWrapper>
         </PageWrapper>
     );
