@@ -1,40 +1,39 @@
 import styled from "styled-components";
 
 const ExtracurricularWrapper = styled.main`
-    width: 70%;
-    background-color: #89CFFF;
-    margin: 0 auto;
+  width: 70%;
+  background-color: #89CFFF;
+  margin: 0 auto;
 
-    @media screen and (max-width: 750px) {
-        width: 100%;
-        height: 100vh;
-    }
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    height: 100vh;
+  }
 `;
 
 const Title = styled.h3`
-    border-bottom: 2px solid rgb(204, 0, 0);
-    padding-bottom: 10px;
-    text-align: center;
-    font-size: calc(2.5px + 2.5vw);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    @media screen and (max-width: 750px){
-        font-size: calc(3px + 3vw);
-    }
+  border-bottom: 2px solid rgb(204, 0, 0);
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: calc(2.5px + 2.5vw);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  @media screen and (max-width: 750px){
+      font-size: calc(3px + 3vw);
+  }
 `;
 
 const Paragraph = styled.p`
-    margin: 0 1vw;
-    font-size: calc(1.5px + 2vw);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    margin-bottom: 1.5rem;
-    color: black;
-    @media screen and (max-width: 750px){
-        font-size: calc(2.5px + 2.5vw);
-    }
+  margin: 0 1vw;
+  font-size: calc(1.5px + 2vw);
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+  color: black;
+  @media screen and (max-width: 750px){
+      font-size: calc(2.5px + 2.5vw);
+  }
 `;
 
 const Organization = styled.strong`
-    color: rgb(204, 0, 0);
+  color: rgb(204, 0, 0);
 `;
 
 export default function Extracurricular() {

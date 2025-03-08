@@ -1,5 +1,6 @@
-import { Link, Route, Routes } from "react-router";
+import { Link, Route, Routes, useParams } from "react-router";
 import { styled } from "styled-components";
+import { useEffect } from "react";
 
 import Header from "./Components/Header";
 import Navigation from "./Components/Navigation";
@@ -11,7 +12,6 @@ import Experience from "./Components/Compartments/Experience";
 import Extracurricular from "./Components/Compartments/Extracurricular";
 import Certification from "./Components/Compartments/Certification";
 import Project from "./Components/Compartments/Project";
-// import { useEffect } from "react";
 
 const PageWrapper = styled.div`
     margin: auto;
@@ -44,6 +44,17 @@ const FooterWrapper = styled.footer`
 `;
 
 export default function Root(){
+    const currentPath=useParams();
+    let lastValue=Object.values(currentPath).pop() || "";
+    lastValue = lastValue.charAt(0).toUpperCase() + lastValue.slice(1);
+    useEffect(()=>{
+    if(lastValue===""){
+        document.title="Home | Resume";
+        }else {
+        document.title=lastValue+" | Resume";
+    }   
+    },[lastValue])
+
     return (
         <PageWrapper>
             <Header/>
@@ -59,7 +70,7 @@ export default function Root(){
                     </Routes>
                 </Container>
                 <FooterWrapper>
-                    <p>All rights reserved by Jerry Teixeira: <Link to={''}>Credits</Link> &#169;</p>
+                    <p>All rights reserved by Jerry Teixeira: <Link to={'/'}>Credits</Link> &#169;</p>
                 </FooterWrapper>
         </PageWrapper>
     );

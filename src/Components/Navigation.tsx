@@ -60,15 +60,6 @@ const StyledLink = styled(Link)`
 `;
 
 export default function Navigation() {
-    
-    // const navigate = useNavigate();
-
-    // const NavigationHandle = (root: string) => {
-    //     const title = root === "/" ? "Home" : root;
-    //     document.title =  title + " | Resume";
-    //     navigate(root);
-    // };
-
 
     return(
         <Nav>

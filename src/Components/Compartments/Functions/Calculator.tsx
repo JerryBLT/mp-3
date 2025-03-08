@@ -134,7 +134,7 @@ export default function Calculator(){
                 placeholder="First Number"
                 value={firstNumber}
                 onChange={(e) => setFirstNumber(e.target.value)}
-                />
+            />
             <Input
                 placeholder="Second Number"
                 value={secondNumber}

@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 const ExperienceWrapper = styled.main`
-    width: 70%;
-    background-color: #89CFFF;
-    margin: 0 auto;
+  width: 70%;
+  background-color: #89CFFF;
+  margin: 0 auto;
 
-    @media screen and (max-width: 750px) {
-        width: 100%;
-        height: 100vh;
-    }
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    height: 100vh;
+  }
 `;
 
 const Title = styled.h3`

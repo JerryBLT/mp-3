@@ -26,7 +26,7 @@ const Paragraph = styled.p`
     margin: 0 1vw;
     font-size: calc(1.5px + 2vw);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
-    margin-bottom: 1.5rem;
+    margin-bottom: 10px;
     color: black;
     @media screen and (max-width: 750px){
         font-size: calc(2.5px + 2.5vw);
